@@ -9,5 +9,5 @@ Main Dataset: https://www.countyhealthrankings.org/sites/default/files/media/doc
 
 Stakeholders: Federal, State, and Local Health Organizations, Insurance Companies, Social Service Agencies, Pharmaceutical Corporations.
 
-Key Performance Indicators (KPIs): Health outcomes based on socioeconomic and geographic factors. If we end up training a regression model, we will focus on accuracy as a key score for model evaluation. However, our model could end up being inferential rather than predictive, in which case we would be more focused on measures of statistical significance.
+Key Performance Indicators (KPIs): Health outcomes based on socioeconomic and geographic factors. If we end up training a regression model, we will focus on root mean squared error as a key score for model evaluation. However, our model could end up being inferential rather than predictive, in which case we would be more focused on measures of statistical significance.
 
