@@ -1,4 +1,4 @@
-# HealthInsights
+# Health Insights
 
 We aim to develop a comprehensive analysis and prediction model for county-level health outcomes using a rich dataset of socioeconomic, demographic, and health indicators. This project will leverage advanced data science techniques to uncover insights into public health trends, disparities, and potential interventions across diverse communities in the United States.
 
