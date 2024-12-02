@@ -122,8 +122,8 @@ features_by_category = {
 
 ### Below is a function for generating lists of features present in the dataset:
 
-def extract_feature_names_by_category(df, category_list):
+def extract_features(df, feature_list):
     return [
-    feature for feature in category_list 
+    feature for feature in feature_list 
     if feature in df.columns 
 ]
