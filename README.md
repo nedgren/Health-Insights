@@ -82,5 +82,13 @@ Modeling
 Output files
 - Final results from models and EDA
 
+### Contact
+To further discuss this project or use associate code feel free to contact us:
+Leyda Almodóvar - leyda.av@gmail.com
+Neal Edgren - n.edgren@gmail.com
+Chiara Mattamira - cmattami@vols.utk.edu 
+Shravan Patankar - shravan.patankar@gmail.com
+
+
 
 
