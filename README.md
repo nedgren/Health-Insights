@@ -2,11 +2,11 @@
 
 A project completed for the Fall 2024 Data Science Course at the Erdos Institute.
 
-Team Members: 
-Leyda Almodóvar
-Neal Edgren
-Chiara Mattamira
-Shravan Patankar
+**Team Members:** <br>
+Leyda Almodóvar <br>
+[Neal Edgren](https://github.com/nedgren) <br>
+[Chiara Mattamira](https://github.com/cmattamira) <br>
+Shravan Patankar <br>
 
 ## Project Description 
 
@@ -83,11 +83,11 @@ Output files
 - Final results from models and EDA
 
 ### Contact
-To further discuss this project or use associate code feel free to contact us:
-Leyda Almodóvar - leyda.av@gmail.com
-Neal Edgren - n.edgren@gmail.com
-Chiara Mattamira - cmattami@vols.utk.edu 
-Shravan Patankar - shravan.patankar@gmail.com
+To further discuss this project or use associate code feel free to contact us: <br>
+Leyda Almodóvar - leyda.av@gmail.com <br>
+Neal Edgren - n.edgren@gmail.com <br>
+Chiara Mattamira - cmattami@vols.utk.edu <br>
+Shravan Patankar - shravan.patankar@gmail.com <br>
 
 
 
