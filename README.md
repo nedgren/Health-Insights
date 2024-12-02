@@ -1,13 +1,66 @@
 # Health Insights
 
-We aim to develop a comprehensive analysis and prediction model for county-level health outcomes using a rich dataset of socioeconomic, demographic, and health indicators. This project will leverage advanced data science techniques to uncover insights into public health trends, disparities, and potential interventions across diverse communities in the United States.
+A project completed for the Fall 2024 Data Science Course at the Erdos Institute.
 
-The dataset we propose to use measures data for every county in the United States. It has dozens of potential features measuring various public health and socioeconomic factors. We would like to train a model to predict a major health outcome such as Life Expectancy, Diabetes Cases, Years of Potential Life Lost, or Drug Overdose Deaths on a county-by-county basis, and potentially include statistical inference as well. There are over 600 columns in all, though many of these columns are confidence interval endpoints for a measured statistic, and others are measurements for specific ethnic subgroups. The subgroup data are nowhere near as complete as the overall data, and we do not propose to use those as features to train the model. At present, 	we have narrowed our analysis down to somewhere between 80 and 90 variables. 
+Team Members: 
+Leyda Almodóvar
+Neal Edgren
+Chiara Mattamira
+Shravan Patankar
 
-Data: https://www.countyhealthrankings.org/health-data
-Main Dataset: https://www.countyhealthrankings.org/sites/default/files/media/document/2024_county_health_release_data_-_v1.xlsx
+## Project Description 
 
-Stakeholders: Federal, State, and Local Health Organizations, Insurance Companies, Social Service Agencies, Pharmaceutical Corporations.
+### Project Overview
+We developed a comprehensive analysis for the risk of diabetes at a county-level using a rich dataset of socioeconomic, demographic, and health indicators. We obtained our dataset from County Health Rankings & Roadmaps. Specifically, our objectives are to:
+- Identify key risk predictors for diabetes in the US
+- Provide insights to help make informed policy decisions
+- Understand which populations are at risk at a local level
 
-Key Performance Indicators (KPIs): Health outcomes based on socioeconomic and geographic factors. If we end up training a regression model, we will focus on root mean squared error as a key score for model evaluation. However, our model could end up being inferential rather than predictive, in which case we would be more focused on measures of statistical significance.
+Stakeholders:  Federal, State, and Local Health Organizations, Insurance Companies, Social Service Agencies, Pharmaceutical Corporations.
+
+### Modeling approach: 
+We split the data into 80% training set and 20% testing set. 20% of the training set was reserved as a validation set. After doing some exploratory analysis, we ran some baseline models (mean model, random sampling) on all the features and then we compared linear regression, random forest, and XGBoost. Since XGBoost performed significantly better, we performed cross-validation for this model and tuned hyperparameters. 
+
+We then looked at several models using XGBoost: Full model (includes all 48 features), Health behaviors only, Socioeconomic only, Demographic only, Physical Environment only, Access to Care only.
+
+
+### Results
+For the full model, we found that the percentage of physically inactive people was the most important feature, followed by percentage of children in poverty, and percentage of people who completed high school in a given county. The RMSE for the full model is 0.31.
+
+We also looked at importance by feature group, calculated the RMSE for each, and found that the top features by group are as follows:
+- Health behaviors:
+  - Top features: % physically inactive, % insufficient sleep, % adults with obesity.
+  - RMSE: 0.52 
+- Socioeconomic factors:
+  - Top features: % children in poverty, % completed high school, % children in single-parent households
+  - RMSE: 0.72 
+- Demographics:
+  - Top features: % hispanic non-white, % black, % asian
+  - RMSE: 1.02 
+- Physical environment:
+  - Top features: % food insecure, % households with broadband access, food environment index
+  - RMSE: 1.34 
+- Access to care:
+  - Top features:% uninsured, % with annual mammograms, % uninsured children
+  - RMSE: 1.74 
+
+We compared the prevalence of diabetes between counties with low median income and counties with high median income. We found that demographic features are more predictive for low-income counties, while health behavior features are more predictive for high-income counties. There were also noticeable differences in socioeconomic features.
+
+We also split the data by percentage of non-White and found that for counties below the median income, socioeconomic factors were more important and for counties above the median, health behaviors were more prevalent highlighting the need for tailored interventions that address both health behaviors and socio-economic challenges specific to each racial and income group.
+
+We concluded that diabetes prevalence is not only predicted by health behaviors, as it can be expected but also by socioeconomic factors, with the latter ones being especially important in counties with lower household income.
+
+### Future work
+A more in-depth analysis of a specific state or geographical region, making a more inferential model, and further reducing our feature list 
+
+## Dependencies
+ XGBoost, Scikit-Learn, Pandas, Numpy, Matplotlib, Seaborn
+
+## Data Access
+Use used the 2024 County Health Release National Data provided by County Health Rankings & Roadmaps (CHR&R), found at https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation
+
+## Folder organization and summary
+
+
+
 
