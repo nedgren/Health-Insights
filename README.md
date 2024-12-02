@@ -3,10 +3,10 @@
 A project completed for the Fall 2024 Data Science Course at the Erdos Institute.
 
 **Team Members:** <br>
-Leyda Almodóvar <br>
+[Leyda Almodóvar](https://github.com/lalmodovarvel) <br>
 [Neal Edgren](https://github.com/nedgren) <br>
 [Chiara Mattamira](https://github.com/cmattamira) <br>
-Shravan Patankar <br>
+[Shravan Patankar](https://github.com/vsop-shravan) <br>
 
 ## Project Description 
 
@@ -57,7 +57,7 @@ A more in-depth analysis of a specific state or geographical region, making a mo
  XGBoost, Scikit-Learn, Pandas, Numpy, Matplotlib, Seaborn
 
 ## Data Access
-Use used the 2024 County Health Release National Data provided by County Health Rankings & Roadmaps (CHR&R), found at https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation
+We used the 2024 County Health Release National Data provided by County Health Rankings & Roadmaps (CHR&R), found at [here](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation).
 
 ## Folder organization and summary
 
