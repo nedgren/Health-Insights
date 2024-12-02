@@ -61,6 +61,26 @@ Use used the 2024 County Health Release National Data provided by County Health 
 
 ## Folder organization and summary
 
+Data
+- Data-reduced: Cleaned data set
+- Data-reduced-test: Test set of the clean data
+- Data-reduced-train: Train set of the clean data
+- Features-grouped: List of all features and the groups they belong to (health, socioeconomics, environmental, access to care, demographic)
+- Pre-cleaning data sets can also be found here
+
+Exploration
+- Exploratory Data Analaysis and plot generation on the entire clean data set
+- Exploratory Data Analaysis and plot generation for each feature group
+
+Modeling
+- Initial comparison among models
+- A more in depth evaluation of XGB & parameter tuning
+- Feature importance on all features and on each feature group
+- Feature importance on data set split by median of median household income
+- Feature importance on data set split by median of % non-hispanic white
+
+Output files
+- Final results from models and EDA
 
 
 
