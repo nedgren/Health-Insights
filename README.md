@@ -82,6 +82,8 @@ Modeling
 Output files
 - Final results from models and EDA
 
+The files in exploration and modeling are labeled to indicate the order in which they should be run. Some notebooks have the same label, indicating that they may be run in any order after the previous ones.
+
 ### Contact
 To further discuss this project or use associate code feel free to contact us: <br>
 Leyda Almodóvar - leyda.av@gmail.com <br>
