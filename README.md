@@ -18,6 +18,9 @@ We developed a comprehensive analysis for the risk of diabetes at a county-level
 
 Stakeholders:  Federal, State, and Local Health Organizations, Insurance Companies, Social Service Agencies, Pharmaceutical Corporations.
 
+### Project Video Presentation:
+🎥 [Health Insights](https://www.erdosinstitute.org/project-database/fall-2024/data-science-boot-camp/health-insights) 
+
 ### Modeling approach: 
 We split the data into 80% training set and 20% testing set. 20% of the training set was reserved as a validation set. After doing some exploratory analysis, we ran some baseline models (mean model, random sampling) on all the features and then we compared linear regression, random forest, and XGBoost. Since XGBoost performed significantly better, we performed cross-validation for this model and tuned hyperparameters. 
 
